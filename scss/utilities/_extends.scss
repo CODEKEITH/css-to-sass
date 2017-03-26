@@ -19,6 +19,14 @@
 
 // Inline-block display
 
-%inline-block {
+%inline-blk {
 	display: inline-block;
+}
+
+// Clearfix
+
+%clearfix {
+	content: "";
+    display: table;
+    clear: both;
 }

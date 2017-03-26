@@ -1,0 +1,17 @@
+
+// Mobile description properties
+
+@mixin mobile-description {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	color: $color-text-light;
+}
+
+// Text properties
+
+@mixin text($size, $weight: null, $color: null) {
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+}

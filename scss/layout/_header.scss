@@ -9,16 +9,46 @@ header ul li {
 .main-nav {
 	& {
 		@extend %centered;
-		font-weight: bold;		
+		@include text(16px,$weight: bold);
+
+		@media #{$brk-desktop} {		
+			float: right;
+		}
 	}
 	& a:hover {
 		color: $color-text-light;	
 	}
+	& li {
+		@media (min-width: 768px) {
+			display: inline-block;
+			text-align: center;
+			padding-left: 20px;
+			padding-right: 20px;
+			background-color: $color-background;
+		}  
+		
+		@media #{$brk-desktop} {		
+			padding: 30px 20px 0 10px;
+		}
+	}
 }
 
-a {
-    text-decoration: none;
-    color: $color-text-dark;	
+.name {
+
+	@media #{$brk-desktop} {
+		display: inline-block;
+		float: left;
+		padding-left: 35px;
+	}	
 }
+
+.container:after {
+	@extend %clearfix;    
+}
+
+
+
+
+
 
 

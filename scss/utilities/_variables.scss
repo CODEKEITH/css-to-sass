@@ -14,3 +14,13 @@ $color-text-light     : $grey;
 $color-section-border : $light-grey;
 $white     			  : #fff;
 $black    			  : #000;
+
+// Font variables
+
+$font-primary     : 'Francois One', sans-serif;
+$font-secondary   : 'Rokkitt', serif;
+
+// Media query breakpoints
+
+$brk-tablet     : '(min-width: 768px)';
+$brk-desktop    : '(min-width: 1024px)';

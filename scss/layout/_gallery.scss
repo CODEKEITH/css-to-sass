@@ -1,32 +1,36 @@
 
-.image-gallery {
-	background-color: $white;
-	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 20px;
-}
-
 img {
 	width: 90%;	
 	padding: 25px 0;
 }
 
-.image-title {
-	@extend %no-margin-auto;
-	font-size: 1.3em;
-	color: $color-text-light;
+.image {
+	&-gallery {
+		background-color: $white;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+	&-title {
+		@extend %no-margin-auto;
+		@include text(1.3em, $color: $color-text-light);
+	}
+	&-description, {
+		@include mobile-description;
+	}
 }
 
-.image-description,
-.contact-description,
-.contact-location {
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	color: $color-text-light;
-}
+.gallery li {
 
-
-h2 {
-	color: $color-text-dark;		
+	@media #{$brk-tablet} {
+		display: inline-block;
+		width: 49%;
+		margin-right: -4px;
+		vertical-align: top;
+	}
+	
+	@media #{$brk-desktop} {		
+		width: 33%;		
+	}
+	
 }

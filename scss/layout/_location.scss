@@ -1,17 +1,37 @@
 
-.location {
-	padding: 35px 0;
-	border-bottom: 1px solid $color-section-border;
-}
-
 .contact-location {
-	font-family: 'Rokkitt', serif;
+	font-family: $font-secondary;
 }
 
-.location-smallimage {
-	width: 90%; 	
+.location {
+	& {
+		padding: 35px 0;
+		border-bottom: 1px solid $color-section-border;
+		
+		@media #{$brk-tablet} {
+			margin: 0 auto;
+			width: 90%;
+		}
+	}
+	&-smallimage {
+		width: 90%;
+
+		@media #{$brk-tablet} {
+			display: none;
+		}	
+	}
+	&-image {
+		@extend %hide;
+		
+		@media #{$brk-tablet} {
+			width: 100%;
+			display: inline;
+		}
+	}
+
 }
 
-.location-image {
-	@extend %hide;
-}
+
+
+
+

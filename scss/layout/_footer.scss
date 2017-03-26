@@ -1,26 +1,57 @@
 
 .footer-name {
-	@extend %inline-block;
+	@extend %inline-blk;
 	float: left;
 	padding-left: 10px;
 	color: $color-text-dark;
+	
+	@media #{$brk-tablet} {
+		padding-left: 50px;
+	}
 }
 
 .back {
 	& {
-		@extend %inline-block;
+		@extend %inline-blk;
 		float: right;
 		padding-right: 10px;
 		margin-top: 20px;
+		
+		@media #{$brk-tablet} {
+			display: none;
+		}
 	}
 	& a {
-		color: $color-text-dark;	
+		@include text(16px, $color: $color-text-dark);
 	}
 	& a:hover {
-		color: $color-text-light;
+		@include text(16px, $color: $color-text-light);
 	}
 }
 
 .responsive-nav {
-	@extend %hide;
+	& {
+		@extend %hide;
+		
+		@media #{$brk-tablet} {
+			display: inline-block;
+			float: right;
+			margin-top: 20px;
+			padding-right: 50px;
+			padding-bottom: 70px;
+		}
+	}
+
+	& a:hover {
+	
+		@media #{$brk-tablet} {
+			@include text(16px, $color: $color-text-light);
+		}
 }
+
+}
+
+
+
+
+

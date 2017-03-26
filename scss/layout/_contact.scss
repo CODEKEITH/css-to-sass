@@ -1,7 +1,30 @@
 
 .contact {
-	padding: 35px 0;
-	border-bottom: 1px solid $color-section-border;
+
+	& {
+		padding: 35px 0;
+		border-bottom: 1px solid $color-section-border;
+		
+		@media #{$brk-tablet} {
+			margin: 0 auto;
+			width: 90%;
+		}
+	}
+	&-description,
+	&-location {
+		@include mobile-description;
+	}
+	&-description {
+	
+		@media #{$brk-tablet} {
+			margin: 0 auto;
+			width: 65%;
+		}
+			
+		@media #{$brk-desktop} {
+			width: 50%;
+		}
+	}	
 }
 
 .phone,

@@ -10,14 +10,27 @@ body, .profile-image, .profile, .image-title {
 .footer-name, .back {
   display: inline-block; }
 
+.container:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 * {
   box-sizing: border-box; }
 
 body {
+  max-width: 1200px;
   padding: 0;
-  font-family: 'Francois One', sans-serif;
+  font-family: "Francois One", sans-serif;
   color: #000;
   background-color: #F6F6F6; }
+
+a {
+  text-decoration: none;
+  color: #2F4F4F; }
+
+h2 {
+  color: #2F4F4F; }
 
 header ul li {
   background-color: #fff;
@@ -25,17 +38,49 @@ header ul li {
   padding: 10px 0; }
 
 .main-nav {
+  font-size: 16px;
   font-weight: bold; }
+  @media (min-width: 1024px) {
+    .main-nav {
+      float: right; } }
 .main-nav a:hover {
   color: grey; }
+@media (min-width: 768px) {
+  .main-nav li {
+    display: inline-block;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #F6F6F6; } }
+@media (min-width: 1024px) {
+  .main-nav li {
+    padding: 30px 20px 0 10px; } }
 
-a {
-  text-decoration: none;
-  color: #2F4F4F; }
+@media (min-width: 1024px) {
+  .name {
+    display: inline-block;
+    float: left;
+    padding-left: 35px; } }
 
 .contact {
   padding: 35px 0;
   border-bottom: 1px solid lightgrey; }
+  @media (min-width: 768px) {
+    .contact {
+      margin: 0 auto;
+      width: 90%; } }
+.contact-description, .contact-location {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: grey; }
+@media (min-width: 768px) {
+  .contact-description {
+    margin: 0 auto;
+    width: 65%; } }
+@media (min-width: 1024px) {
+  .contact-description {
+    width: 50%; } }
 
 .phone,
 .email {
@@ -46,62 +91,119 @@ a {
   width: 70%;
   padding-top: 40px;
   padding-bottom: 30px; }
-
+  @media (min-width: 768px) {
+    .profile-image {
+      float: right;
+      width: 40%;
+      padding-top: 25px;
+      padding-bottom: 45px;
+      margin-right: 25px;
+      margin-left: 15px; } }
+  @media (min-width: 1024px) {
+    .profile-image {
+      width: 30%;
+      padding-bottom: 65px;
+      margin-right: 20px; } }
 .profile {
   width: 95%;
   color: grey;
   margin-bottom: 35px; }
-
+  @media (min-width: 768px) {
+    .profile {
+      padding-top: 25px;
+      padding-right: 10px;
+      margin-bottom: 0px; } }
 .profile-container {
   background-color: #F6F6F6; }
+  @media (min-width: 768px) {
+    .profile-container {
+      width: 100%; } }
+  @media (min-width: 768px) {
+    .profile-container :after {
+      content: "";
+      display: table;
+      clear: both; } }
 
 .footer-name {
   float: left;
   padding-left: 10px;
   color: #2F4F4F; }
+  @media (min-width: 768px) {
+    .footer-name {
+      padding-left: 50px; } }
 
 .back {
   float: right;
   padding-right: 10px;
   margin-top: 20px; }
+  @media (min-width: 768px) {
+    .back {
+      display: none; } }
 .back a {
+  font-size: 16px;
   color: #2F4F4F; }
 .back a:hover {
+  font-size: 16px;
   color: grey; }
+
+@media (min-width: 768px) {
+  .responsive-nav {
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 70px; } }
+@media (min-width: 768px) {
+  .responsive-nav a:hover {
+    font-size: 16px;
+    color: grey; } }
+
+img {
+  width: 90%;
+  padding: 25px 0; }
 
 .image-gallery {
   background-color: #fff;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 20px; }
-
-img {
-  width: 90%;
-  padding: 25px 0; }
-
 .image-title {
   font-size: 1.3em;
   color: grey; }
-
-.image-description,
-.contact-description,
-.contact-location {
+.image-description {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
   color: grey; }
 
-h2 {
-  color: #2F4F4F; }
+@media (min-width: 768px) {
+  .gallery li {
+    display: inline-block;
+    width: 49%;
+    margin-right: -4px;
+    vertical-align: top; } }
+@media (min-width: 1024px) {
+  .gallery li {
+    width: 33%; } }
+
+.contact-location {
+  font-family: "Rokkitt", serif; }
 
 .location {
   padding: 35px 0;
   border-bottom: 1px solid lightgrey; }
-
-.contact-location {
-  font-family: 'Rokkitt', serif; }
-
+  @media (min-width: 768px) {
+    .location {
+      margin: 0 auto;
+      width: 90%; } }
 .location-smallimage {
   width: 90%; }
+  @media (min-width: 768px) {
+    .location-smallimage {
+      display: none; } }
+@media (min-width: 768px) {
+  .location-image {
+    width: 100%;
+    display: inline; } }
 
 /*# sourceMappingURL=application.css.map */

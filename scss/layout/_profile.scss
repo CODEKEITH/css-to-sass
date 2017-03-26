@@ -1,21 +1,53 @@
 
-
-.profile-image {
-	@extend %no-margin-auto;
-	display: block;
-	width: 70%;
-	padding-top: 40px;
-	padding-bottom: 30px;
-}
-
 .profile {
-	@extend %no-margin-auto;	
-	width: 95%;
-	color: $color-text-light;
-	margin-bottom: 35px;
+	&-image {
+		@extend %no-margin-auto;
+		display: block;
+		width: 70%;
+		padding-top: 40px;
+		padding-bottom: 30px;
+		
+		@media #{$brk-tablet} {
+			float: right;
+			width: 40%;	
+			padding-top: 25px;
+			padding-bottom: 45px;
+			margin-right: 25px;
+			margin-left: 15px;
+		}
+		
+		@media #{$brk-desktop} {
+			width: 30%;	
+			padding-bottom: 65px;
+			margin-right: 20px;
+		}
+	}
+	& {
+		@extend %no-margin-auto;	
+		width: 95%;
+		color: $color-text-light;
+		margin-bottom: 35px;
+		
+		@media #{$brk-tablet} {
+			padding-top: 25px;
+			padding-right: 10px;
+			margin-bottom: 0px;
+		}
+	}
+	&-container {
+		background-color: $color-background;
+
+		@media #{$brk-tablet} {
+			width: 100%;
+		}
+		:after {
+	
+			@media #{$brk-tablet} {
+				content: "";
+				display: table;
+				clear: both;
+			}
+		}
+	}
 }
 
-
-.profile-container {
-	background-color: $color-background;	
-}
