@@ -1,0 +1,26 @@
+
+.footer-name {
+	@extend %inline-block;
+	float: left;
+	padding-left: 10px;
+	color: $color-text-dark;
+}
+
+.back {
+	& {
+		@extend %inline-block;
+		float: right;
+		padding-right: 10px;
+		margin-top: 20px;
+	}
+	& a {
+		color: $color-text-dark;	
+	}
+	& a:hover {
+		color: $color-text-light;
+	}
+}
+
+.responsive-nav {
+	@extend %hide;
+}

@@ -1,0 +1,32 @@
+
+.image-gallery {
+	background-color: $white;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+img {
+	width: 90%;	
+	padding: 25px 0;
+}
+
+.image-title {
+	@extend %no-margin-auto;
+	font-size: 1.3em;
+	color: $color-text-light;
+}
+
+.image-description,
+.contact-description,
+.contact-location {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	color: $color-text-light;
+}
+
+
+h2 {
+	color: $color-text-dark;		
+}

@@ -1,0 +1,24 @@
+
+
+header ul li {
+	background-color: $white;
+	margin: 5px 3px;
+	padding: 10px 0;
+}
+
+.main-nav {
+	& {
+		@extend %centered;
+		font-weight: bold;		
+	}
+	& a:hover {
+		color: $color-text-light;	
+	}
+}
+
+a {
+    text-decoration: none;
+    color: $color-text-dark;	
+}
+
+

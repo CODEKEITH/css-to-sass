@@ -1,0 +1,170 @@
+
+/*************************************
+Main Styles
+*************************************/
+
+
+
+
+
+
+
+
+
+
+
+/*************************************
+Navigation
+*************************************/
+
+
+
+
+/*************************************
+Media Queries
+*************************************/
+
+@media (min-width: 768px) {
+	
+	
+.main-nav li {
+    @extend %inline-block;
+	@extend %centered;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: $color-background;
+}
+
+.profile-image {
+	float: right;
+	width: 40%;	
+	padding-top: 25px;
+	padding-bottom: 45px;
+	margin-right: 25px;
+	margin-left: 15px;
+}
+
+.profile-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.profile-container {
+	width: 100%;	
+}
+
+.profile {
+	padding-top: 25px;
+	padding-right: 10px;
+}
+
+
+.gallery li {
+	@extend %inline-block;
+	width: 49%;
+	margin-right: -4px;
+	vertical-align: top;
+}
+
+.responsive-nav {
+	@extend %inline-block;
+	float: right;
+	margin-top: 20px;
+	padding-right: 50px;
+	padding-bottom: 70px;
+}
+
+.responsive-nav a {
+	color: $color-text-dark;
+}
+
+.footer-name {
+	padding-left: 50px;
+}
+
+.back {
+	@extend %hide;	
+}
+
+.location:after {
+    content: "";
+    display: table;
+}
+
+.location {
+	@extend %no-margin-auto;
+	width: 90%;
+}
+
+.location-image {
+	width: 100%;
+	display: inline;		  
+}
+  
+.location-smallimage {
+	@extend %hide;	
+}
+
+.responsive-nav a:hover {
+	color: $color-text-light;
+}
+
+.contact {
+	@extend %no-margin-auto;
+	width: 90%;
+}
+
+.contact-description {
+	@extend %no-margin-auto;
+	width: 65%;
+}
+	
+}
+
+@media (min-width: 1024px) {
+	
+.gallery li {
+	@extend %inline-block;
+	width: 33%;
+	margin-right: -4px;
+	vertical-align: top;
+}	
+
+.name {
+	@extend %inline-block;
+	float: left;
+	padding-left: 35px;
+}
+
+.main-nav li {
+	@extend %inline-block;
+	float: right;
+	padding: 30px 20px 0 10px;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.profile-image {
+	float: right;
+	width: 30%;	
+	padding-top: 25px;
+	padding-bottom: 65px;
+	margin-right: 20px;
+	margin-left: 15px;
+}
+
+.contact {
+	width: 90%;
+}
+
+.contact-description {
+	width: 50%;
+}
+	
+	
+}

@@ -1,0 +1,21 @@
+
+
+.profile-image {
+	@extend %no-margin-auto;
+	display: block;
+	width: 70%;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.profile {
+	@extend %no-margin-auto;	
+	width: 95%;
+	color: $color-text-light;
+	margin-bottom: 35px;
+}
+
+
+.profile-container {
+	background-color: $color-background;	
+}

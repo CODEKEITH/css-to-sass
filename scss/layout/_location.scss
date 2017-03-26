@@ -1,0 +1,17 @@
+
+.location {
+	padding: 35px 0;
+	border-bottom: 1px solid $color-section-border;
+}
+
+.contact-location {
+	font-family: 'Rokkitt', serif;
+}
+
+.location-smallimage {
+	width: 90%; 	
+}
+
+.location-image {
+	@extend %hide;
+}
