@@ -11,7 +11,6 @@
 }
 
 .back {
-	& {
 		@extend %inline-blk;
 		float: right;
 		padding-right: 10px;
@@ -20,7 +19,7 @@
 		@media #{$brk-tablet} {
 			display: none;
 		}
-	}
+
 	& a {
 		@include text(16px, $color: $color-text-dark);
 	}
@@ -30,7 +29,6 @@
 }
 
 .responsive-nav {
-	& {
 		@extend %hide;
 		
 		@media #{$brk-tablet} {
@@ -40,7 +38,7 @@
 			padding-right: 50px;
 			padding-bottom: 70px;
 		}
-	}
+
 
 	& a:hover {
 	

@@ -7,19 +7,18 @@ header ul li {
 }
 
 .main-nav {
-	& {
 		@extend %centered;
 		@include text(16px,$weight: bold);
 
 		@media #{$brk-desktop} {		
 			float: right;
 		}
-	}
+		
 	& a:hover {
 		color: $color-text-light;	
 	}
 	& li {
-		@media (min-width: 768px) {
+		@media #{$brk-tablet} {
 			display: inline-block;
 			text-align: center;
 			padding-left: 20px;

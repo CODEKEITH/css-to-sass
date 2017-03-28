@@ -4,7 +4,6 @@
 }
 
 .location {
-	& {
 		padding: 35px 0;
 		border-bottom: 1px solid $color-section-border;
 		
@@ -12,7 +11,7 @@
 			margin: 0 auto;
 			width: 90%;
 		}
-	}
+
 	&-smallimage {
 		width: 90%;
 
